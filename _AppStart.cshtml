@@ -1,0 +1,12 @@
+﻿
+@using System.Web.Routing
+@using Microsoft.AspNet.SignalR
+
+@{
+  
+    RouteTable.Routes.MapHubs(new HubConfiguration()
+        {
+            
+          EnableCrossDomain = true
+        });
+}
